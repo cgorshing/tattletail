@@ -11,7 +11,8 @@ class ServerController {
 
     def list = {
         if(!params.max) params.max = 10
-        [ serverList: Server.list( params ) ]
+        params.order = "asc"
+        [ serverList: Server.listOrderBySequence(params) ]
     }
 
     def show = {

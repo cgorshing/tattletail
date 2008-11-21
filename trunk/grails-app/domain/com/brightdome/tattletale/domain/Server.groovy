@@ -7,4 +7,5 @@ public class Server
 	String url
 	String status
 	String activity
+	int sequence;
 }
