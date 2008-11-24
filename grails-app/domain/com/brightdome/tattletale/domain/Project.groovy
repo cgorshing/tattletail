@@ -8,7 +8,7 @@ import com.thoughtworks.xstream.annotations.XStreamAlias
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute
 
 @XStreamAlias("Project")
-public class ProjectStatusReport
+public class Project
 {
 	@XStreamAsAttribute
     String  name

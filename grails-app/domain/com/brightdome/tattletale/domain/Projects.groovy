@@ -11,14 +11,14 @@ import com.thoughtworks.xstream.annotations.XStreamImplicit;
 public class Projects
 {
     @XStreamImplicit(itemFieldName="Project")
-    List<ProjectStatusReport> projects = new ArrayList<ProjectStatusReport>();
+    List<Project> projects = new ArrayList<s>();
 
-    public List<ProjectStatusReport> getProjects()
+    public List<Project> getProjects()
     {
         return projects
     }
 
-    public void setProjects(List<ProjectStatusReport> projects)
+    public void setProjects(List<Project> projects)
     {
         this.projects = projects
     }
