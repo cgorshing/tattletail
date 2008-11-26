@@ -3,20 +3,7 @@
     <head>
         <meta http-equiv="refresh" content="10"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <style>
-			html, body {
-				/* margins can get messy on containers */
-				margin: 0;
-				padding: 0;
-				background-color: black;
-			}
-			.row {
-				text-align: center;
-				font-family: sans-serif;
-				font-size: 300%;
-				padding-top: 6%;
-			}
-		</style>
+        <link rel="stylesheet" href="${createLinkTo(dir:'css',file:'styles.css')}" />
         
 		<g:javascript library="jquery"/>	
 		<jq:plugin name="flexify"/>

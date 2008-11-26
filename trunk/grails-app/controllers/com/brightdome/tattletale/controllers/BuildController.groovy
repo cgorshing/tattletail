@@ -12,14 +12,8 @@ class BuildController {
     def list = {
         if(!params.max) params.max = 10
         params.order = "asc"
-        [ buildInstanceList: Build.list( params ) ]
+        [ buildInstanceList: Build.listOrderBySequence( params ) ]
     }
-    
-    def list2 = {
-            if(!params.max) params.max = 10
-            params.order = "asc"
-            [ buildInstanceList: Build.list( params ) ]
-        }
 
     def show = {
         def buildInstance = Build.get( params.id )
