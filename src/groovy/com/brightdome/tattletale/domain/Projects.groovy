@@ -11,7 +11,7 @@ import com.thoughtworks.xstream.annotations.XStreamImplicit;
 public class Projects
 {
     @XStreamImplicit(itemFieldName="Project")
-    List<Project> projects = new ArrayList<s>();
+    List<Project> projects = new ArrayList<Project>();
 
     public List<Project> getProjects()
     {
