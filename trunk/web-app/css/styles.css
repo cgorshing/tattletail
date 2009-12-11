@@ -1,14 +1,62 @@
 @CHARSET "UTF-8";
 
-html, body {
-	/* margins can get messy on containers */
-	margin: 0;
-	padding: 0;
-	background-color: black;
+body {
+text-align: center;
+font-size: small;
+margin: 0;
+font-family: Helvetica, Arial, "Sans Serif";
 }
-.row {
-	text-align: center;
-	font-family: sans-serif;
-	font-size: 300%;
-	padding-top: 6%;
+ 
+div {
+margin: 0;
+padding: 0;
+}
+ 
+h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2em;
+}
+ 
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 120%;
+  line-height: 1.6em;
+}
+ 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+ 
+.clear {
+border: none;
+clear: both;
+}
+ 
+.status {
+float: left;
+}
+ 
+.border {
+  height: 100%;
+  border: black 1px solid;
+}
+ 
+.success {
+background-color: green;
+}
+ 
+.failure {
+background-color: red;
+}
+ 
+.unknown {
+background-color: white;
+}
+ 
+.building {
+text-decoration: blink;
+background-color: yellow;
 }

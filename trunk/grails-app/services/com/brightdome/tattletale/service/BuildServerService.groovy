@@ -35,6 +35,10 @@ public class BuildServerService
 	              	{
 	              		build.status = project.lastBuildStatus
 	              		build.activity = project.activity
+						build.label = project.lastBuildLabel
+						build.url = project.webUrl
+						build.time = project.lastBuildTime
+						
 	              		build.save()
 	              	}
 	              }

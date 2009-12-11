@@ -4,14 +4,14 @@ import static org.apache.commons.lang.builder.EqualsBuilder.reflectionEquals
 import static org.apache.commons.lang.builder.HashCodeBuilder.reflectionHashCode
 import static org.apache.commons.lang.builder.ToStringBuilder.reflectionToString
 
-import com.thoughtworks.xstream.annotations.XStreamAlias;
-import com.thoughtworks.xstream.annotations.XStreamImplicit;
+import com.thoughtworks.xstream.annotations.XStreamAlias
+import com.thoughtworks.xstream.annotations.XStreamImplicit
 
 @XStreamAlias("Projects")
 public class Projects
 {
     @XStreamImplicit(itemFieldName="Project")
-    List<Project> projects = new ArrayList<Project>();
+    List<Project> projects = new ArrayList<Project>()
 
     public List<Project> getProjects()
     {
@@ -34,8 +34,8 @@ public class Projects
     {
         return reflectionEquals(this, obj)
     }
-
-    @Override
+	
+	@Override
     public int hashCode()
     {
         return reflectionHashCode(this)

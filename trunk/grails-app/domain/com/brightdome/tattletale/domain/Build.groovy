@@ -8,5 +8,8 @@ public class Build
 	String alias
 	String status
 	String activity
+	String url
+	String time
+	String label
 	int sequence
 }
