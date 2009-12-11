@@ -4,44 +4,41 @@
         <meta http-equiv="refresh" content="10"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <link rel="stylesheet" href="${createLinkTo(dir:'css',file:'styles.css')}" />
-        
-		<g:javascript library="jquery"/>	
-		<jq:plugin name="flexify"/>
-		<jq:plugin name="sound"/>
-		<script>
-			$(function () {
-				$('html, body, .row').flex('height', 1);
-				$(document).flexify();
-			});
-
-<!--			jQuery(document).ready(function() {-->
-<!--               	$("#sound_player").sound({swf: "${createLinkTo(dir:'js/jquery', file:'Player.swf')}", file: "http://www.digitalxero.net/music/Pour_Another_Round.mp3"});-->
-<!--            });-->
-				
-		</script>
+		<g:javascript library="prototype" />
+		<g:javascript library="date" />
+		
+		<script type="text/javascript">
+      		document.observe("dom:loaded", function() 
+      		{
+        		$$("span.build_time").each(function(element) 
+        		{
+        			var dateString = element.innerHTML.replace("T", "").replaceAll("-", ",");
+          			var ts = new Date(dateString);
+          			element.innerHTML = ts.relativeTimeInWords(new Date());
+        		});
+      		});
+    	</script>
+    	
+    	<style type="text/css">
+      		.status {
+       			width: ${ (int)(100 / columns) }%;
+       			height: ${ 100 / rows }%;
+      		}
+      		h1 {
+        		margin-top: ${ 50 / rows }px;
+        		font-size: ${ 100 / rows * 1.5 }px;
+      		}
+    </style>
+		        
     </head>
     <body>
-        <g:each in="${buildInstanceList}" status="i" var="build">
-			<g:if test="${'Building' == build.activity }">
-				<div class="row" style="background: yellow">
-			</g:if>
-			<g:elseif test="${'Success' == build.status }">
-				<div class="row" style="background: green">
-			</g:elseif>
-			<g:elseif test="${'Failure' == build.status }">
-				<div class="row" style="background: red">
-			</g:elseif>
-			<g:else>
-				<div class="row" style="background: white">
-			</g:else>
-	        		${fieldValue(bean:build, field:'alias')}
+        <g:each in="${builds}" status="i" var="build">
+        	<div class="status ${build.status}">
+	        	<div class="border">
+	          		<h1 class="${build.activity}"><a href="${build.url}">${build.alias}</a></h1>
+	          		<p>Build <strong>${build.label}</strong> was a <strong>${build.status}</strong> <span class="build_time" title="${build.time}">${build.time}</span></p>
+	          	</div>
 	        </div>
-	        
-	        <g:if test="${i < buildInstanceList.size() - 1}">
-	        	<br/>
-	        </g:if>
-	    </g:each>
-	    
-	    <div id="sound_player"></div>
+        </g:each>
     </body>
 </html>
