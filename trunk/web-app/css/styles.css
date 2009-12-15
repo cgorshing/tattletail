@@ -36,12 +36,11 @@ clear: both;
 }
  
 .status {
-float: left;
+	float: left;
 }
  
 .border {
-  height: 100%;
-  border: black 1px solid;
+  border: black thin;
 }
  
 .success {
@@ -57,6 +56,6 @@ background-color: white;
 }
  
 .building {
-text-decoration: blink;
-background-color: yellow;
+	text-decoration: blink;
+	background-color: yellow;
 }

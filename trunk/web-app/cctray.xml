@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Projects>
+<Project name="cleanup-artifacts-B" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="build.189" lastBuildTime="2009-12-12T07:49:23" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/cleanup-artifacts-B"/>
+<Project name="dali-R2.2.0-I" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="build.2" lastBuildTime="2009-12-09T17:50:01" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/dali-R2.2.0-I"/>
+<Project name="dali-R3.0.0-I" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="build.5" lastBuildTime="2009-12-09T19:29:17" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/dali-R3.0.0-I"/>
+<Project name="jaxws-R0.5-I" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="build.37" lastBuildTime="2009-12-09T23:34:09" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/jaxws-R0.5-I"/>
+<Project name="jsdt-R1.2.0-I" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="build.15" lastBuildTime="2009-12-09T00:49:07" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/jsdt-R1.2.0-I"/>
+<Project name="patches-R1.5.5-P" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="build.12" lastBuildTime="2009-11-23T06:44:12" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/patches-R1.5.5-P"/>
+<Project name="patches-R3.0.5-P" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="build.1" lastBuildTime="2009-11-21T09:27:25" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/patches-R3.0.5-P"/>
+<Project name="pave-R0.5.0-I" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="build.14" lastBuildTime="2009-11-10T21:31:20" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/pave-R0.5.0-I"/>
+<Project name="servadapt-R3.2.0-I" activity="Sleeping" lastBuildStatus="Failure" lastBuildLabel="" lastBuildTime="2009-11-22T23:41:55" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/servadapt-R3.2.0-I"/>
+<Project name="vex-R0.5-I" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="build.10" lastBuildTime="2009-12-04T15:56:02" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/vex-R0.5-I"/>
+<Project name="wtp-R3.1.2-M" activity="Sleeping" lastBuildStatus="Failure" lastBuildLabel="" lastBuildTime="2009-12-09T02:11:24" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/wtp-R3.1.2-M"/>
+<Project name="wtp-R3.2.0-I" activity="Building" lastBuildStatus="Success" lastBuildLabel="build.39" lastBuildTime="2009-12-04T17:24:42" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/wtp-R3.2.0-I"/>
+<Project name="wtp-R3.2.0-S" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="build.10" lastBuildTime="2009-12-10T12:06:53" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/wtp-R3.2.0-S"/>
+<Project name="wtpbuildTools-R3.2.0-T" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="build.1" lastBuildTime="2009-11-21T02:54:29" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/wtpbuildTools-R3.2.0-T"/>
+<Project name="xmlsec-R0.5-I" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="build.5" lastBuildTime="2009-12-01T20:59:13" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/xmlsec-R0.5-I"/>
+</Projects>
