@@ -13,7 +13,7 @@ class BuildController {
         if(!params.max) params.max = 10
         params.order = "asc"
 		
-		def builds = Build.listOrderBySequence( params )
+		def builds = Build.listOrderBySequence()
 
 		def columns = 1
 		
