@@ -17,7 +17,7 @@ public class Build
 	String status
 	String activity
 	String url
-	String time
+	Date time
 	String label
 	int sequence
 }
