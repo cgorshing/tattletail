@@ -1,5 +1,9 @@
 @CHARSET "UTF-8";
 
+html {
+	overflow: auto;
+}
+
 body {
 text-align: center;
 font-size: small;
