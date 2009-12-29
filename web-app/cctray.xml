@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <Projects>
 <Project name="cleanup-artifacts-B" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="build.189" lastBuildTime="2009-12-12T07:49:23" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/cleanup-artifacts-B"/>
-<Project name="dali-R2.2.0-I" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="build.2" lastBuildTime="2009-12-09T17:50:01" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/dali-R2.2.0-I"/>
+<Project name="dali-R2.2.0-I" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="build.2" lastBuildTime="2009-12-28T22:19:26Z" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/dali-R2.2.0-I"/>
 <Project name="dali-R3.0.0-I" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="build.5" lastBuildTime="2009-12-09T19:29:17" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/dali-R3.0.0-I"/>
 <Project name="jaxws-R0.5-I" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="build.37" lastBuildTime="2009-12-09T23:34:09" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/jaxws-R0.5-I"/>
 <Project name="jsdt-R1.2.0-I" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="build.15" lastBuildTime="2009-12-09T00:49:07" webUrl="http://build.eclipse.org:7777/dashboard/tab/build/detail/jsdt-R1.2.0-I"/>
