@@ -9,7 +9,7 @@ public class BuildServerService
 	{
 		def projects = []
 		BuildServer.list().each { projects += updateBuildStatus( it ) }
-		return projects
+		projects
 	}
 	
 	private List updateBuildStatus( BuildServer buildServer )
@@ -31,6 +31,6 @@ public class BuildServerService
 			}
 		}
 		
-		return moniteredProjects.sort { it.sequence }
+		moniteredProjects.sort { it.sequence }
 	}
 }
