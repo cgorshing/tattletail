@@ -22,5 +22,5 @@ class BuildController {
 		def rows = Math.ceil( builds.size() / columns )
 
 		[ builds: builds, rows: rows, columns: columns ]
-    }
+	}
 }
