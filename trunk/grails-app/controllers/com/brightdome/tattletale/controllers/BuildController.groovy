@@ -7,8 +7,8 @@ class BuildController {
 	def buildServerService
 	
 	def index = { redirect(action:list,params:params) }
-
-    // the delete, save and update actions only accept POST requests
+	
+	// the delete, save and update actions only accept POST requests
     static def allowedMethods = []
 
     def list = {
@@ -18,22 +18,9 @@ class BuildController {
 		def builds = buildServerService.update() 
 
 		def columns = 1
-		
-		switch ( builds.size() )
-		{
-			case ( 0..4 ):
-				columns = 1 
-				break
-			case ( 5..10 ):
-				columns = 2
-				break
-			case ( 11..21 ):
-				columns = 3
-				break
-			case ( 21..100):
-			 	columns = 4
-			 	break
-		}
+		if ( builds.size() > 4 ) columns = 2
+		if ( builds.size() > 10 ) columns = 3
+		if ( builds.size() > 21 ) columns = 4
 		
 		def rows = Math.ceil( builds.size() / columns )
 
