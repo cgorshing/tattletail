@@ -8,6 +8,7 @@ public class BuildServerService
 	public List update()
 	{
 		def projects = []
+		
 		BuildServer.list().each { projects += updateBuildStatus( it ) }
 		projects
 	}
@@ -22,7 +23,7 @@ public class BuildServerService
 			
 			if ( project != null )
 			{
-				build.status = project.'@lastBuildStatus'
+				build.status = project.'@lastBuildStatus'.toLowerCase()
 				build.activity = project.'@activity'
 				build.label = project.'@lastBuildLabel'
 				build.url = project.'@webUrl'
