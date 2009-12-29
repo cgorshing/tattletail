@@ -8,12 +8,7 @@ public class BuildServerService
 	public List update()
 	{
 		def projects = []
-		
-		for ( BuildServer buildServer : BuildServer.list() )
-		{
-			projects = update( buildServer )
-		}
-		
+		BuildServer.list().each { projects += update ( it ) }
 		return projects
 	}
 	
@@ -25,13 +20,14 @@ public class BuildServerService
 		for (Build build: buildServer.builds)
         {
 			  def project = projects.find { it.'@name' ==~ build.name }
+			
 			  if ( project != null )
 			  {
 				  build.status = project.'@lastBuildStatus'
 				  build.activity = project.'@activity'
 				  build.label = project.'@lastBuildLabel'
 				  build.url = project.'@webUrl'
-				  build.time = new Date().parse( "yyyy-MM-dd'T'HH:mm:ss", project.'@lastBuildTime' )
+				  build.time = new Date().parse( "yyyy-MM-dd'T'HH:mm:ss",  project.'@lastBuildTime'.replace( "Z", "") )
 				  moniteredProjects.add( build )
 			  }
         }
