@@ -9,9 +9,9 @@ class BuildController {
 	def index = { redirect(action:list, params:params) }
 	
 	// the delete, save and update actions only accept POST requests
-    static def allowedMethods = []
+	static def allowedMethods = []
 
-    def list = {
+	def list = {
 		def builds = buildServerService.update() 
 
 		def columns = 1
