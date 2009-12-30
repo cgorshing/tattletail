@@ -5,17 +5,18 @@ import com.brightdome.tattletale.domain.BuildServer
 
 public class BuildServerService
 {
+	def xmlParser
+
 	public List update()
 	{
 		def projects = []
-		
 		BuildServer.list().each { projects += updateBuildStatus( it ) }
 		projects
 	}
 	
 	private List updateBuildStatus( BuildServer buildServer )
 	{
-		def projects = new XmlParser().parse( buildServer.url )
+		def projects = xmlParser.parse( buildServer.url )
 		def moniteredProjects = []
 		
 		buildServer.builds.each { build -> 
