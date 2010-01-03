@@ -1,0 +1,62 @@
+# To get started, use the configuration below as a start.
+# You'll need to separate each build server with '---'.
+
+# Example configuration with two build servers
+
+# ---
+# url: http://buildserver1/cc.xml
+# builds:
+#     - name: build name 1
+#       alias: build alias 1
+#       sequence: 1
+#     - name: build name 2
+#       alias: build alias 2
+#       sequence: 2
+# ---
+# url: http://buildserver2/cc.xml
+# builds:
+#     - name: build name 1
+#       alias: build alias 1
+#       sequence: 1
+#     - name: build name 2
+#       alias: build alias 2
+#       sequence: 2
+# ---
+
+
+url: http://localhost:8080/tattletale/cctray.xml
+builds:
+    - name: dali-R2.2.0-I
+      alias: Patches R1.5.5-P
+      sequence:1
+    - name: wtp-R3.2.0-I
+      alias: WTP R3 1-I
+      sequence:2
+    - name: wtp-R3.1.2-M
+      alias: WTP R3 1-I
+      sequence:3
+    - name: wtp-R3.1.2-M
+      alias: WTP R3 1-I
+      sequence:4
+    - name: wtp-R3.1.2-M
+      alias: WTP R3 1-I
+      sequence:5
+    - name: dali-R2.2.0-I
+      alias: Patches R1.5.5-P
+      sequence:6
+    - name: wtp-R3.2.0-I
+      alias: WTP R3 1-I
+      sequence:7
+    - name: wtp-R3.1.2-M
+      alias: WTP R3 1-I
+      sequence:8
+    - name: wtp-R3.1.2-M
+      alias: WTP R3 1-I
+      sequence:9
+    - name: wtp-R3.1.2-M
+      alias: WTP R3 1-I
+      sequence:10
+    - name: wtp-R3.1.2-M
+      alias: WTP R3 1-I
+      sequence:11
+---
