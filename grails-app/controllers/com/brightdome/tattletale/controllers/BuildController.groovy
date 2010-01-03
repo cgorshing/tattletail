@@ -1,10 +1,8 @@
 package com.brightdome.tattletale.controllers
 
-import com.brightdome.tattletale.domain.Build;
-
 class BuildController {
     
-	def buildServerService
+	def buildService
 	
 	def index = { redirect(action:list, params:params) }
 	
@@ -12,7 +10,7 @@ class BuildController {
 	static def allowedMethods = []
 
 	def list = {
-		def builds = buildServerService.update() 
+		def builds = buildService.retrieveBuilds()
 
 		def columns = 1
 		if ( builds.size() > 4 ) columns = 2

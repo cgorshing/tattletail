@@ -1,4 +1,3 @@
-<%@ page import="com.brightdome.tattletale.domain.Build" %>
 <html>
     <head>
         <meta http-equiv="refresh" content="10"/>
@@ -34,7 +33,7 @@
     <body>
         <g:each in="${builds}" status="i" var="build">
         	<div class="status ${build.activity == "Building" ? build.activity : build.status}" style="display: table; #position: relative;">
-	        	<div style=" #position: absolute; #top: 50%;display: table-cell; vertical-align: middle; border: solid black 1px">
+	        	<div style="#position: absolute; #top: 50%;display: table-cell; vertical-align: middle; border: solid black 1px">
 	          		<div style="#position: relative; #top: -50%;">
 	          		 	<h1 class="${build.activity}"><a href="${build.url}">${build.alias}</a></h1>
 	          			<p>Build <strong>${build.label}</strong> was a <strong>${build.status}</strong> <span class="build_time" title="${build.time}">${build.time}</span></p>

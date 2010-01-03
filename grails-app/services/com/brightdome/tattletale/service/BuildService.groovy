@@ -1,20 +1,24 @@
 package com.brightdome.tattletale.service
 
-import com.brightdome.tattletale.domain.Build
-import com.brightdome.tattletale.domain.BuildServer
+import org.ho.yaml.Yaml
+import org.springframework.context.ApplicationContextAware
+import org.springframework.context.ApplicationContext
 
-public class BuildServerService
+public class BuildService implements ApplicationContextAware
 {
+    ApplicationContext applicationContext
+
 	def xmlParser
 
-	public List update()
+	public List retrieveBuilds()
 	{
-		def projects = []
-		BuildServer.list().each { projects += updateBuildStatus( it ) }
-		projects
+        def buildServers = Yaml.loadStream( applicationContext.getResource( "classpath:config.yml" ).getFile() )
+        def projects = []
+        buildServers.each { projects += retrieveMoniteredBuilds( it ) }
+        projects
 	}
 	
-	private List updateBuildStatus( BuildServer buildServer )
+	private List retrieveMoniteredBuilds( buildServer )
 	{
 		def projects = xmlParser.parse( buildServer.url )
 		def moniteredProjects = []
